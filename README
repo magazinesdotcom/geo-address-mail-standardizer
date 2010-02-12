@@ -1,0 +1,31 @@
+Geo::Address::Mail::Standardizer - A role for Geo::Address::Mail standardization
+
+SYNOPSIS
+
+This module provides an interface for writing address standardization as
+well as a class to represent the results of a standarization process.
+
+    package Geo::Address::Mail::Standardizer::My;
+    use Moose;
+
+    with 'Geo::Address::Mail::Standardizer';
+
+    # use it
+
+    my $std = Geo::Address::Mail::Standardizer::My->new(...);
+    my $address = Geo::Address::Mail::MyCountry;
+    my $results = $std->standardize($address);
+
+AUTHOR
+
+Cory G Watson, <gphat at cpan.org>
+
+COPYRIGHT & LICENSE
+
+Copyright 2010 Cory G Watson.
+
+This program is free software; you can redistribute it and/or modify it
+under the terms of either: the GNU General Public License as published
+by the Free Software Foundation; or the Artistic License.
+
+See http://dev.perl.org/licenses/ for more information.
