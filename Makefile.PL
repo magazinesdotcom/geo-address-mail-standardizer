@@ -8,6 +8,7 @@ license  'perl';
 build_requires 'Test::More';
 
 requires 'Moose' => '0.90'; # Uses Native, so depend on .90
+requires 'Geo::Address::Mail';
 
 WriteAll;
 
