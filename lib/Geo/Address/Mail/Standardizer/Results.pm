@@ -73,6 +73,10 @@ Returns an array of field names that were changed as part of the standardization
 
 Returns the value of the specified field if it was changed.
 
+=head2 has_standardized_address
+
+Returns true if a standardized address has been set for this results.
+
 =head2 is_changed($name)
 
 Returns true if the specifid field name was changed, otherwise false.
