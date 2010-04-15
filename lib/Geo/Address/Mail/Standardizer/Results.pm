@@ -17,7 +17,8 @@ has 'changed' => (
 
 has 'standardized_address' => (
     is => 'rw',
-    isa => 'Geo::Address::Mail'
+    isa => 'Geo::Address::Mail',
+    predicate => 'has_standardized_address'
 );
 
 __PACKAGE__->meta->make_immutable;
